@@ -1,42 +1,45 @@
-# Atividade Prática com Gephi e Wikipedia
-
+🌐 Atividade Prática com Gephi e Wikipedia
 Este projeto tem como objetivo a construção e visualização de uma rede semântica a partir de artigos da Wikipédia relacionados ao termo Artificial Neural Network.
 
-## Descrição da Atividade
-Utilizamos a biblioteca wikipedia para coletar páginas a partir de um termo semente (Artificial Neural Network) e seguimos os links internos entre os artigos para formar uma rede de conhecimento. A coleta foi realizada de forma limitada a duas camadas de profundidade, com a remoção de palavras irrelevantes por meio de uma lista customizada de stopwords.
+🧠 Descrição da Atividade
+Utilizou-se a biblioteca wikipedia em Python para coletar páginas a partir de um termo semente (Artificial Neural Network). A partir desse ponto, percorremos links internos entre artigos da Wikipédia, formando uma rede conceitual com até duas camadas de profundidade.
 
-## Filtragem de conteúdo
-Para garantir que a rede gerada represente conexões relevantes, foi aplicada uma filtragem manual com base em termos genéricos e técnicos comuns da Wikipédia, como:
+Para garantir relevância semântica, foi aplicada uma lista customizada de stopwords, removendo termos excessivamente genéricos ou técnicos.
 
-Termos genéricos de ciência e computação (data, system, method, model, learning, etc.)
+🧹 Filtragem de Conteúdo
+A filtragem manual removeu termos que poderiam gerar conexões espúrias, incluindo:
 
-Termos específicos da Wikipédia (category, article, citation, reference, etc.)
+Termos genéricos de ciência e computação: data, system, method, model, learning, etc.
 
-Identificadores e códigos de publicações científicas (DOI, ISBN, PMID, etc.)
+Termos específicos da Wikipédia: category, article, citation, reference, etc.
 
-Esses termos foram excluídos da rede para evitar conexões espúrias e melhorar a análise.
+Identificadores de publicações científicas: DOI, ISBN, PMID, entre outros.
 
-## Dados da Rede
-Total inicial: 70.895 nós e 205.505 arestas
+Essa filtragem visou enriquecer a análise da rede, priorizando conexões conceituais relevantes.
 
-Subgrafo extraído com grau mínimo > 24:
-1.027 nós e 58.285 arestas
+📈 Dados da Rede
+Rede original: 70.895 nós e 205.505 arestas
 
-Este subgrafo foi exportado em formato .graphml e visualizado no Gephi.
+Subgrafo extraído (grau mínimo > 24):
+→ 1.027 nós
+→ 58.285 arestas
 
-## Visualização (Gephi)
-Utilizou-se o Gephi 0.10.1 para:
+Este subgrafo foi exportado no formato .graphml e posteriormente visualizado no Gephi.
 
-Visualizar a topologia da rede com layout ForceAtlas2
+🎨 Visualização com Gephi
+A análise visual foi realizada com o Gephi 0.10.1, aplicando os seguintes procedimentos:
 
-Colorir comunidades detectadas via modularidade
+Layout: Circle Pack Layout (agrupamento hierárquico em círculos)
 
-Redimensionar os nós com base no grau
+Cores: Comunidades detectadas via algoritmo de modularidade
 
-Aplicar rotação e filtros visuais para melhor análise
+Tamanho dos nós: Proporcional ao grau (número de conexões)
 
-##Observações
+Ajustes visuais: Filtros e rotação para realçar a estrutura da rede
 
-O projeto demonstra como explorar automaticamente conexões conceituais a partir da Wikipédia.
+Essa visualização destaca agrupamentos conceituais e estruturas hierárquicas entre os tópicos relacionados.
 
-Ideal para introdução a análise de redes complexas, ciência de dados e visualização com Gephi.
+📌 Observações
+A atividade demonstra como construir e explorar uma rede semântica automatizada a partir de artigos da Wikipédia.
+
+É uma excelente introdução prática à análise de redes complexas, ciência de dados e visualização com Gephi.
