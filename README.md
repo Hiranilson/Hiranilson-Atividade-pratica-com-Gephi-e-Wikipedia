@@ -1,0 +1,1 @@
+# Hiranilson-Atividade-pratica-com-Gephi-e-Wikipedia
