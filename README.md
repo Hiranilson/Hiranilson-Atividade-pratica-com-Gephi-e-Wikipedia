@@ -20,9 +20,7 @@ Essa filtragem visou enriquecer a análise da rede, priorizando conexões concei
 ## 📈 Dados da Rede
 Rede original: 70.895 nós e 205.505 arestas
 
-Subgrafo extraído (grau mínimo > 24):
-→ 1.027 nós
-→ 58.285 arestas
+Subgrafo extraído (grau mínimo > 24): 1.027 nós e 58.285 arestas
 
 Este subgrafo foi exportado no formato .graphml e posteriormente visualizado no Gephi.
 
