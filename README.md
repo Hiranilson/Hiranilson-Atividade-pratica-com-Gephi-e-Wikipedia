@@ -39,6 +39,11 @@ Ajustes visuais: Filtros e rotação para realçar a estrutura da rede
 
 Essa visualização destaca agrupamentos conceituais e estruturas hierárquicas entre os tópicos relacionados.
 
+## 🔗 Acesse a Visualização Interativa
+A visualização interativa do projeto está disponível em:
+
+👉 https://hiranilson.github.io/Hiranilson-Atividade-pratica-com-Gephi-e-Wikipedia/
+
 ## 📌 Observações
 A atividade demonstra como construir e explorar uma rede semântica automatizada a partir de artigos da Wikipédia.
 
